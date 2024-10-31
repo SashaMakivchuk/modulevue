@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import FriendForm from "../components/FriendForm.vue";
+import FriendForm from "./FriendForm.vue";
 
 export default {
   name: "AddFriend",

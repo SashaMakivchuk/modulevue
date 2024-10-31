@@ -2,8 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "../views/HomePage.vue";
 import FriendsList from "../views/FriendsList.vue";
-import AddFriend from "../views/AddFriend.vue";
-import FriendDetails from "../views/FriendDetails.vue";
+import AddFriend from "../components/AddFriend.vue";
+import FriendDetails from "../components/FriendDetails.vue";
 
 Vue.use(Router);
 
