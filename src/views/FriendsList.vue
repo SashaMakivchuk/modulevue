@@ -19,30 +19,29 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
-import FriendForm from '@/components/FriendForm.vue';
+import { mapState, mapActions } from "vuex";
+import FriendForm from "@/components/FriendForm.vue";
 
 export default {
   components: {
     FriendForm,
   },
   computed: {
-    ...mapState(['friends']), 
+    ...mapState(["friends"]),
   },
   created() {
-    this.loadFriends(); 
+    this.loadFriends();
   },
   methods: {
-    ...mapActions(['loadFriends', 'addFriend']), 
+    ...mapActions(["loadFriends", "addFriend"]),
   },
 };
 </script>
 
 <style scoped>
-
 ul {
-  list-style-type: none; 
-  padding: 0; 
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
@@ -60,4 +59,3 @@ li div p {
   margin: 5px 0;
 }
 </style>
-

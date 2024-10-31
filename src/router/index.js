@@ -1,36 +1,35 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Home from '../views/Home.vue';
-import FriendsList from '../views/FriendsList.vue';
-import AddFriend from '../views/AddFriend.vue';
-import FriendDetails from '../views/FriendDetails.vue';
+import Vue from "vue";
+import Router from "vue-router";
+import Home from "../views/HomePage.vue";
+import FriendsList from "../views/FriendsList.vue";
+import AddFriend from "../views/AddFriend.vue";
+import FriendDetails from "../views/FriendDetails.vue";
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   routes: [
     {
-      path: '/',
-      name: 'Home',
+      path: "/",
+      name: "Home",
       component: Home,
     },
     {
-      path: '/friends',
-      name: 'FriendsList',
+      path: "/friends",
+      name: "FriendsList",
       component: FriendsList,
     },
     {
-      path: '/add-friend',
-      name: 'AddFriend',
+      path: "/add-friend",
+      name: "AddFriend",
       component: AddFriend,
     },
     {
-      path: '/friend/:id',
-      name: 'FriendDetails',
+      path: "/friend/:id",
+      name: "FriendDetails",
       component: FriendDetails,
       props: true,
     },
   ],
 });
-
